@@ -9,6 +9,6 @@ namespace PMSInterface
 {
     public interface ICompanyRepository : IRepository<Company>
     {
-        List<Product> Search(string keyword);
+        List<Company> Search(string keyword);
     }
 }

@@ -8,20 +8,20 @@ using System.Threading.Tasks;
 
 namespace PMSRepository
 {
-    public class ProductRepository : Repository<Product>, IProductRepository
+    class CompanyRepository : Repository<Company>, ICompanyRepository
     {
-        public List<Product> Search(string keyword)
+        public List<Company> Search(string keyword)
         {
             try
             {
-                return this.GetAll().Where(p => p.Name.Contains(keyword)).ToList();
+                return this.GetAll().Where(c => c.CompanyName.Contains(keyword)).ToList();
             }
             catch (Exception ex)
             {
 
                 throw ex;
             }
-           
+
         }
     }
 }

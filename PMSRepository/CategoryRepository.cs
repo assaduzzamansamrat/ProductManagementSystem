@@ -12,7 +12,16 @@ namespace PMSRepository
     {
         public List<Category> Search(string keyword)
         {
-            return this.GetAll().Where(c => c.Name.Contains(keyword)).ToList();
+            try
+            {
+                return this.GetAll().Where(c => c.Name.Contains(keyword)).ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+           
         }
     }
 }
