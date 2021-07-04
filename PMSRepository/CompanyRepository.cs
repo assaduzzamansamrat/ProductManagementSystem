@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PMSRepository
 {
-    class CompanyRepository : Repository<Company>, ICompanyRepository
+   public class CompanyRepository : Repository<Company>, ICompanyRepository
     {
         public List<Company> Search(string keyword)
         {

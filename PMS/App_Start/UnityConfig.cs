@@ -19,7 +19,9 @@ namespace PMS
 
             container.RegisterType<ICategoryRepository, CategoryRepository>();
             container.RegisterType<IProductRepository, ProductRepository>();
-            
+            container.RegisterType<IUserRepository, UserRepository>();
+            container.RegisterType<ICompanyRepository, CompanyRepository>();
+
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
