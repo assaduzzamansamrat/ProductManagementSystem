@@ -1,6 +1,0 @@
-E:\Personal Softwares\four_layer_arch_with_di\LayeredArchitectureWithDependencyInjection\PMSEntity\bin\Debug\PMSEntity.dll
-E:\Personal Softwares\four_layer_arch_with_di\LayeredArchitectureWithDependencyInjection\PMSEntity\bin\Debug\PMSEntity.pdb
-E:\Personal Softwares\four_layer_arch_with_di\LayeredArchitectureWithDependencyInjection\PMSEntity\obj\Debug\PMSEntity.csprojAssemblyReference.cache
-E:\Personal Softwares\four_layer_arch_with_di\LayeredArchitectureWithDependencyInjection\PMSEntity\obj\Debug\PMSEntity.csproj.CoreCompileInputs.cache
-E:\Personal Softwares\four_layer_arch_with_di\LayeredArchitectureWithDependencyInjection\PMSEntity\obj\Debug\PMSEntity.dll
-E:\Personal Softwares\four_layer_arch_with_di\LayeredArchitectureWithDependencyInjection\PMSEntity\obj\Debug\PMSEntity.pdb
