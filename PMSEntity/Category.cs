@@ -10,5 +10,6 @@ namespace PMSEntity
     {
         public string Name { get; set; }
         public string ProductCategoryDetails { get; set; }
+        public long CompanyId { get; set; }
     }
 }

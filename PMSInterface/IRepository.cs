@@ -10,7 +10,7 @@ namespace PMSInterface
     public interface IRepository<TEntity> where TEntity : Entity
     {
         List<TEntity> GetAll();
-        TEntity Get(int id);
+        TEntity Get(long id);
         int Insert(TEntity entity);
         int Update(TEntity entity);
         int Delete(TEntity entity);

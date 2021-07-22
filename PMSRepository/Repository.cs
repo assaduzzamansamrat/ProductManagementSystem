@@ -26,7 +26,7 @@ namespace PMSRepository
           
         }
 
-        public TEntity Get(int id)
+        public TEntity Get(long id)
         {
             try
             {
