@@ -54,7 +54,7 @@ namespace PMS.Controllers
             if (category != null)
             {
                 category.IpAddress = Utilities.GetIpAddress();
-                category.CreatedDate = DateTime.Now;
+                category.EditedDate = DateTime.Now;
                 this.repo.Update(category);
                 return RedirectToAction("Index", "Category");
             }

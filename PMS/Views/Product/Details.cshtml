@@ -1,0 +1,154 @@
+﻿@model PMSEntity.Product
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Product</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CategoryId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CompanyId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CompanyId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductImageOne)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ProductImageOne)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductImageTwo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ProductImageTwo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductImageThree)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ProductImageThree)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductImageFour)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ProductImageFour)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CreatedBy)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CreatedBy)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CreatedDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EditedBy)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EditedBy)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EditedDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EditedDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IpAddress)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IpAddress)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
