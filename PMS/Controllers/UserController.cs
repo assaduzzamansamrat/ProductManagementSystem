@@ -58,6 +58,8 @@ namespace PMS.Controllers
             {
                 user.IpAddress = Utilities.GetIpAddress();
                 user.EditedDate = DateTime.Now;
+                user.Password = Utilities.GetPasswordHash(user.Password);
+                user.ConfirmPassword = Utilities.GetPasswordHash(user.ConfirmPassword);
                 this.repo.Update(user);
                return RedirectToAction("Index", "User");
             }

@@ -14,16 +14,13 @@ namespace PMS.HelperClasses
         {
             return System.Web.HttpContext.Current.Request.UserHostAddress;
         }
-        public static string GetPasswordHash(string data)
+        public static string GetPasswordHash(string password)
         {
             try
             {
-                byte[] byteArray = Encoding.ASCII.GetBytes(data);
-                MemoryStream stream = new MemoryStream(byteArray);
-                var md5 = new MD5CryptoServiceProvider();
-                var md5data = md5.ComputeHash(stream);
-                string passwordHash = md5data.ToString();
-                return passwordHash;
+                var bytes = new UTF8Encoding().GetBytes(password);
+                var hashBytes = System.Security.Cryptography.MD5.Create().ComputeHash(bytes);
+                return Convert.ToBase64String(hashBytes);
             }
             catch (Exception ex)
             {
