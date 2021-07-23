@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PMSEntity.Product>
+﻿@model IEnumerable<PMSEntity.User>
 
 @{
     Layout = null;
@@ -18,37 +18,31 @@
     <table class="table">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.FirstName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                @Html.DisplayNameFor(model => model.LastName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Unit)
+                @Html.DisplayNameFor(model => model.EmailAddress)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Quantity)
+                @Html.DisplayNameFor(model => model.PhoneNumber)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CategoryId)
+                @Html.DisplayNameFor(model => model.UserProfileImage)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CompanyId)
+                @Html.DisplayNameFor(model => model.Address)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+                @Html.DisplayNameFor(model => model.Role)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ProductImageOne)
+                @Html.DisplayNameFor(model => model.Password)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ProductImageTwo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductImageThree)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductImageFour)
+                @Html.DisplayNameFor(model => model.ConfirmPassword)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CreatedBy)
@@ -71,37 +65,31 @@
     @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.FirstName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                @Html.DisplayFor(modelItem => item.LastName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Unit)
+                @Html.DisplayFor(modelItem => item.EmailAddress)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoryId)
+                @Html.DisplayFor(modelItem => item.UserProfileImage)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CompanyId)
+                @Html.DisplayFor(modelItem => item.Address)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
+                @Html.DisplayFor(modelItem => item.Role)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ProductImageOne)
+                @Html.DisplayFor(modelItem => item.Password)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ProductImageTwo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProductImageThree)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProductImageFour)
+                @Html.DisplayFor(modelItem => item.ConfirmPassword)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CreatedBy)

@@ -58,7 +58,7 @@ namespace PMSRepository
         public int Update(TEntity entity)
         {
             try
-            {
+            {                          
                 this.context.Entry<TEntity>(entity).State = System.Data.Entity.EntityState.Modified;
                 return this.context.SaveChanges();
             }
